@@ -1,5 +1,5 @@
 ### aws_tagging
-Scripts to tag AWS EC2 resources: Instances, EBS volumes and snapshots
+### Scripts to tag AWS EC2 resources: Instances, EBS volumes and snapshots
 --------------------------------------------
 
 ### ec2_tagger.sh...
@@ -23,7 +23,7 @@ Success...!
   Usage: ec2_byip_tag.sh [tag_key] [tag_value] [private_ip_address] [aws_region]
 ```
 ```
-~/aws/tagging/aws_tagging  (master)$ ./ec2_byip_tag.sh <value> <value> <ip_address> <aws_region>
+~/aws/tagging/aws_tagging  (master)-> ./ec2_byip_tag.sh <value> <value> <ip_address> <aws_region>
 
 Success...!
 ```
