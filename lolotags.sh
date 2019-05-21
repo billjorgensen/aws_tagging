@@ -31,11 +31,11 @@ function add_tags() {
       KeyValue="off=(M-F,20);on=(M-F,6);tz=mt;"
       TagValue=$(echo "'${KeyValue}'")
       ;;
-    c7n-qorta)
+    c7n-xxxxx)
       KeyValue="off=(M-F,22);on=(M-F,4);tz=mt;"
       TagValue=$(echo "'${KeyValue}'")
       ;;
-    c7ndb-qorta)
+    c7ndb-xxxxx)
       KeyValue="off=(M-F,23);on=(M-F,3);tz=mt;"
       TagValue=$(echo "'${KeyValue}'")
       ;;
@@ -63,7 +63,7 @@ function remove_tags() {
 case ${Task} in
   add)
     # check for valid tags...
-    if [ "${KeyName}" = "c7n-offhours" -o "${KeyName}" = "c7ndb-offhours" -o "${KeyName}" = "c7ndb-qorta" -o "${KeyName}" = "c7n-qorta" ]
+    if [ "${KeyName}" = "c7n-offhours" -o "${KeyName}" = "c7ndb-offhours" -o "${KeyName}" = "c7ndb-xxxxx" -o "${KeyName}" = "c7n-xxxxxx" ]
     then
       add_tags
     else
@@ -71,9 +71,9 @@ case ${Task} in
 SCRIPT ERROR: That tag is not used...
   Custodian tags:
     c7n-offhours
-    c7n-qorta
+    c7n-xxxxx
     c7ndb-offhours
-    c7ndb-qorta
+    c7ndb-xxxxx
 
 Usage: `basename $0` [add|remove] [Custodian tag]
 "
@@ -82,7 +82,7 @@ Usage: `basename $0` [add|remove] [Custodian tag]
     ;;
   remove)
     # check for valid keys...
-    if [ "${KeyName}" = "c7n-offhours" -o "${KeyName}" = "c7ndb-offhours" -o "${KeyName}" = "c7ndb-qorta" -o "${KeyName}" = "c7n-qorta" ]
+    if [ "${KeyName}" = "c7n-offhours" -o "${KeyName}" = "c7ndb-offhours" -o "${KeyName}" = "c7ndb-xxxxx" -o "${KeyName}" = "c7n-xxxxx" ]
     then
       remove_tags
     else
@@ -90,9 +90,9 @@ Usage: `basename $0` [add|remove] [Custodian tag]
 SCRIPT ERROR: That tag is not used...
   Custodian tags:
     c7n-offhours
-    c7n-qorta
+    c7n-xxxxx
     c7ndb-offhours
-    c7ndb-qorta
+    c7ndb-xxxxx
 
 Usage: `basename $0` [add|remove] [Custodian tag]
 "
